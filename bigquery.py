@@ -36,5 +36,12 @@ tables = list(client.list_tables(dataset))
 
 print(len(tables))
 
+query = """
+        SELECT city
+        FROM `bigquery-public-data.openaq.global_air_quality`
+        WHERE country = 'US'
+        """
+
+
 
 
